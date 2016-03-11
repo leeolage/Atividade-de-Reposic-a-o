@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade de Reposição</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap/js/jquery-1.12.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+    <div class="modal fade" id="mdlLogin" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">
+                        &times;
+                    </button>
+                </div>
+
+                <div class="modal-body">
+                    <div class="container">
+                        <div class="row">
+                            <form method="post" role="form" class="form-horizontal" id="frmLogin">
+                                <div class="form-group">
+                                    <label class="control-label col-md-1" for="txt_nome">Nome Completo: </label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="text"
+                                               name="txt_nome" id="txt_nome" />
+                                    </div> <span class="col-md-7"> </span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-1" for="txt_login">Login: </label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="email"
+                                               name="txt_login" id="txt_login" />
+                                    </div> <span class="col-md-7"> </span>
+                                </div>
+                                <div class="form-group">
+                                    <label class="control-label col-md-1" for="psw_senha"> Senha: </label>
+                                    <div class="col-md-4">
+                                        <input class="form-control" type="password"
+                                               name="psw_senha" id="psw_senha" />
+                                    </div> <span class="col-md-7"> </span>
+                                </div>
+                                <div class="form-group">
+                                    <label for="rdb_pag">Tipo de Conta: </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="rdb_pag" id="rdb_pag" value="1" checked> Grátis
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="rdb_pag" id="rdb_pag" value="2"> Premium
+                                    </label>
+                                    <label class="radio-inline">
+                                        <input type="radio" name="rdb_pag" id="rdb_pag" value="3"> Ultra
+                                    </label>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <button type="submit" form="frmLogin"
+                            class="btn btn-primary">Cadastrar</button>
+                    <button type="reset" form="frmLogin"
+                            class="btn btn-warning">Limpar</button>
+                    <button type="button" class="btn btn-danger"
+                            data-dismiss="modal">Cancelar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header class="container-fluid" style="text-align: center">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1>Título do Site</h1>
+            </div>
+        </div>
+    </header>
+
+    <br/>
+
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <ul class="nav navbar-right">
+                <li><a role="button" data-target="#mdlLogin" data-toggle="modal"><span class="glyphicon glyphicon-user">Cadastre-se</span> </a> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <br/>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-8">
+                <div id="crsImagens" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="VW-Gol-2016-Highline.jpg" alt="Gol Highline" class="img-responsive center-block" style="max-height: 200px"/>
+                        </div>
+
+                        <div class="item">
+                            <img src="palio.png" alt="Palio Sporting"  class="img-responsive center-block" style="max-height: 200px"/>
+                        </div>
+
+                        <div class="item">
+                            <img src="441x252_Familia0km_10122014022239.png" alt="Onix"  class="img-responsive center-block" style="max-height: 200px"/>
+                        </div>
+                        <a class="carousel-control left" href="#crsImagens" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <a class="carousel-control right" href="#crsImagens" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                        <ol class="carousel-indicators">
+                            <li data-target="#crsImagens" data-slide-to="0" class="active"></li>
+                            <li data-target="#crsImagens" data-slide-to="1"></li>
+                            <li data-target="#crsImagens" data-slide-to="2"></li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-4">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12"><a href="http://globo.com">Globo</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12"><a href="http://cotemig.com">Cotemig</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12"><a href="http://gmail.com">Gmail</a></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12"><a href="http://google.com">Google</a></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br/>
+
+        <div class="row">
+            <div class="col-xs-12">
+                <p>
+                    A Gol Linhas Aéreas Inteligentes é uma companhia aérea brasileira fundada e homologada em 2001. É a
+                    segunda maior companhia aérea do Brasil em número de passageiros e em número de destinos oferecidos,
+                    operando em 60 aeroportos no território brasileiro e em 23 destinos internacionais, além de ser a
+                    terceira maior em frota de aeronaves. Em 2014, a Gol fechou o ano com uma participação de mercado de
+                    32% do total de assentos oferecidos em voos domésticos e é a companhia com mais participação no
+                    mercado doméstico.
+                    A Gol Linhas Aéreas Inteligentes é uma companhia aérea brasileira fundada e homologada em 2001. É a
+                    segunda maior companhia aérea do Brasil em número de passageiros e em número de destinos oferecidos,
+                    operando em 60 aeroportos no território brasileiro e em 23 destinos internacionais, além de ser a
+                    terceira maior em frota de aeronaves. Em 2014, a Gol fechou o ano com uma participação de mercado de
+                    32% do total de assentos oferecidos em voos domésticos e é a companhia com mais participação no
+                    mercado doméstico.
+                    A Gol Linhas Aéreas Inteligentes é uma companhia aérea brasileira fundada e homologada em 2001. É a
+                    segunda maior companhia aérea do Brasil em número de passageiros e em número de destinos oferecidos,
+                    operando em 60 aeroportos no território brasileiro e em 23 destinos internacionais, além de ser a
+                    terceira maior em frota de aeronaves. Em 2014, a Gol fechou o ano com uma participação de mercado de
+                    32% do total de assentos oferecidos em voos domésticos e é a companhia com mais participação no
+                    mercado doméstico.
+                    A Gol Linhas Aéreas Inteligentes é uma companhia aérea brasileira fundada e homologada em 2001. É a
+                    segunda maior companhia aérea do Brasil em número de passageiros e em número de destinos oferecidos,
+                    operando em 60 aeroportos no território brasileiro e em 23 destinos internacionais, além de ser a
+                    terceira maior em frota de aeronaves. Em 2014, a Gol fechou o ano com uma participação de mercado de
+                    32% do total de assentos oferecidos em voos domésticos e é a companhia com mais participação no
+                    mercado doméstico.
+
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <br/>
+
+    <footer class="container" style="position: absolute; top: 90%;">
+        <div class="row">
+            <div class="col-xs-6">
+                Empresa Cotemig<br/>
+                Rua Santa Cruz, 546<br/>
+                Bairro Barroca<br/>
+                CEP: 30.431-228 Telefone: (31) 3313-6500
+            </div>
+            <div class="col-xs-6">
+                <a href="https://www.facebook.com/COTEMIG/">Facebook</a><br>
+                <a href="https://www.instagram.com/cotemig/">Instagram</a><br>
+                <a href="https://www.youtube.com/user/colegioCotemig">YouTube</a><br>
+                <a href="https://www.twitter.com/FacCotemig">Twitter</a><br>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
